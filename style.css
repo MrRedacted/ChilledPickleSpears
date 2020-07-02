@@ -1,0 +1,38 @@
+:root {
+  font-size: 62.5%;
+}
+
+.grid {
+  width: 20rem;
+  height: 40rem;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 2rem;
+  width: 2rem;
+}
+
+.square {
+  background-color: purple;
+}
+
+.mini-grid {
+  margin-left: 5rem;
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.mini-grid div {
+  height: 2rem;
+  width: 2rem;
+}
+
+.container {
+  display: flex;
+}
