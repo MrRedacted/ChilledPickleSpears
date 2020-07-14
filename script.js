@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     current.forEach(index => {
       squares[currentPosition + index].classList.add('square');
       squares[currentPosition + index].style.backgroundColor = colors[random];
+      squares[currentPosition + index].style.borderColor = colors[random];
     })
   };
 
@@ -194,6 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
     upNextSquares[nextRandom].forEach(index => {
       displaySquares[displayIndex + index].classList.add(`square`);
       displaySquares[displayIndex + index].style.backgroundColor = colors[nextRandom]; 
+      displaySquares[displayIndex + index].style.borderColor = colors[nextRandom];
     });
   };
 
@@ -230,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function gameOver() {
     if (current.some(index => squares[currentPosition + index].classList.contains(`taken`))) {
-      scoreDisplay.innerHTML = `end`;
+      scoreDisplay.innerHTML = `Game Over`;
       clearInterval(timerId);
     }
   };
